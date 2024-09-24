@@ -15,6 +15,7 @@ Take a look at working backend system example to manage inventory inside a compa
 
 ## Solution:
 - API that handles: `Products`(Creation/Availability of them) and `Orders`
+- `Concurrent` writes protection system (look for version field and getCurrentVersion method)
 - `CQRS` pattern to distinguish business behaviors and separate writes/reads
 - `ExpressJS` API with `Typescript` to ensure proper typing
 - `MongoDB` as our database/persistence layer

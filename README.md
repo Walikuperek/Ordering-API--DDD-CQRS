@@ -4,6 +4,11 @@ Take a look at working backend system example to manage inventory inside a compa
 
 > *Missing: actual DB connection, DomainEvents impl and joi, that's it :)*
 
+*Included 0 dependencies libs:*
+- [Base Errors](/lib/base-errors.ts)
+- [CQRS](/lib/cqrs.ts)
+- [Money](/lib/money.ts)
+
 ## Business problem:
 
 ![problem diagram](./assets/business_problem.png)

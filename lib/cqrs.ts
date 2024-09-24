@@ -63,7 +63,7 @@ export interface DomainEvent<T = any> extends Message<T> {}
 /**
  * @example
  *  const {QueryBus, CommandBus, EventBus} = init<GetProductsQ, InsertProductCmd, InsertedProductE | DeletedProductE>()
- *  const products = await QueryBus.query(new GetProductsQ())
+ *  const products = await QueryBus.execute(new GetProductsQ())
  *  CommandBus.publish(new InsertProductCmd({name, desc, price})) // eventsBus has the same API
  */
 export const init = <

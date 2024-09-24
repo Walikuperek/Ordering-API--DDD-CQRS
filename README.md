@@ -2,7 +2,7 @@
 
 Take a look at working backend system example to manage inventory inside a company.
 
-> Joi and MongoDB is not yet connected. To see how to do it take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
+> Joi and MongoDB is not yet connected. To see how to do it with Docker take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
 
 *Included 0 dependencies libs:*
 - [Base Errors](/lib/base-errors.ts)
@@ -24,7 +24,7 @@ Take a look at working backend system example to manage inventory inside a compa
 
 ## Run: 
 
-> Joi and MongoDB is not yet connected. To see how to do it take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
+> Joi and MongoDB is not yet connected. To see how to do it with Docker take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
 
 ```bash copy
 # Run with in-memory repo's

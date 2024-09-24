@@ -1,6 +1,6 @@
 # CQRS Inventory System
 
-Take a look at working backend system example to manage inventory in a company.
+Take a look at working backend system example to manage inventory inside a company.
 
 > *Missing: actual DB connection, DomainEvents impl and joi, that's it :)*
 

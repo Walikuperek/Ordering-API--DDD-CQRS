@@ -2,8 +2,6 @@
 
 Take a look at working backend system example to manage inventory inside a company.
 
-> *Missing: actual DB connection, DomainEvents impl and joi, that's it :)*
->
 > Joi and MongoDB is not yet connected. To see how to do it take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
 
 *Included 0 dependencies libs:*

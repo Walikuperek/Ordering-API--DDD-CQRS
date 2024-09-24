@@ -1,7 +1,7 @@
 import {randomUUID, UUID} from 'node:crypto';
 import {Currency, Money} from '../../lib/money.js';
 import {BusinessRuleException} from '../../lib/base-errors.js';
-import {Product} from "../availability/index.js";
+import {Product} from '../availability/index.js';
 
 export class OrderLine {
     constructor(

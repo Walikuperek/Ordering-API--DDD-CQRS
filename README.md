@@ -21,7 +21,7 @@ Take a look at working backend system example to manage inventory in a company.
 ##### Increase Stock Command flow
 ```typescript copy
 // 1. register command
-onMsg(CommandBus, 'SellProductCommand', SellProductHandler, productRepository);
+onMsg(CommandBus, 'IncreaseStockCommand', IncreaseStockHandler, productRepository);
 
 // 2. get request
 const increaseStock = async (req: Request, res: Response, next: NextFunction) => {

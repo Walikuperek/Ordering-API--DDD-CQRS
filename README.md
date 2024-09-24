@@ -27,6 +27,14 @@ Take a look at working backend system example to manage inventory inside a compa
 
 > Joi and MongoDB is not yet connected. To see how to do it with Docker take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
 
+Ensure you have proper `.env` file:
+```env copy
+# stage can be 'DEFAULT' | 'TESTS'
+# change variable for unit testing
+STAGE=TESTS
+PORT=3000
+```
+To start local server simply run:
 ```bash copy
 # Run with in-memory repo's
 $ npm i

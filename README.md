@@ -18,7 +18,7 @@ Take a look at working backend system example to manage inventory inside a compa
 - `Concurrent` writes protection system (look for version field and getCurrentVersion method)
 - `CQRS` pattern to distinguish business behaviors and separate writes/reads
 - `ExpressJS` API with `Typescript` to ensure proper typing
-- `MongoDB`/`InMemory` as our database/persistence layer(*in-memory for testing*)
+- `MongoDB`/`InMemory` as our database/persistence layer(*in-memory for testing, Dependency Inversion principle used*)
 - ~~Input validation with `joi`~~ - not yet
 - ~~`Unit` and `Integration` Tests to test our business logic with `Jest`~~ - not yet
 - `Domain Driven Design` to help with business rules

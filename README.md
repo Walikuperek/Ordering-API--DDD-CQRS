@@ -3,6 +3,21 @@
 Take a look at working backend system example to manage inventory inside a company.
 
 > Joi and MongoDB is not yet connected. To see how to do it with Docker take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
+>
+> Example with MongoDB and Docker usage:
+> ```bash copy
+> # build image as express-app
+> docker build -t express-app .
+>
+> # build network for containers
+> docker network create express-network
+>
+> # run MongoDB container in background
+> docker run -d --name mongodb --network express-network -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=example mongo
+>
+> # run express-app container
+> docker run --env-file .env --network express-network -p 5000:5000 express-app
+> ```
 
 *Included 0 dependencies libs(written only for this project):*
 - [/lib/Base Errors](/lib/base-errors.ts)

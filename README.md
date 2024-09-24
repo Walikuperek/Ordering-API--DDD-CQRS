@@ -30,7 +30,6 @@ Take a look at working backend system example to manage inventory inside a compa
 Ensure you have proper `.env` file:
 ```env copy
 # stage can be 'DEFAULT' | 'TESTS'
-# change variable for unit testing
 STAGE=TESTS
 PORT=3000
 ```

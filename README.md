@@ -17,9 +17,12 @@ Take a look at working backend system example to manage inventory in a company.
 - `Unit` and `Integration` Tests to test our business logic with `Jest`
 - `Domain Driven Design` to help with business rules
 
-
 ## Run: 
+
+> Joi and MongoDB is not yet connected. To see how to do it take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
+
 ```bash copy
+# Run with in-memory repo's
 $ npm i
 $ npm run build
 $ npm run dev

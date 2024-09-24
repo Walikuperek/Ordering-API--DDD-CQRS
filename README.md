@@ -4,10 +4,10 @@ Take a look at working backend system example to manage inventory inside a compa
 
 > Joi and MongoDB is not yet connected. To see how to do it with Docker take a look at [Express and MongoDB at my website](https://quak.com.pl/learn/node/dockerize-express-and-mongo/).
 
-*Included 0 dependencies libs:*
-- [Base Errors](/lib/base-errors.ts)
-- [CQRS](/lib/cqrs.ts)
-- [Money](/lib/money.ts)
+*Included 0 dependencies libs(written only for this project):*
+- [/lib/Base Errors](/lib/base-errors.ts)
+- [/lib/CQRS](/lib/cqrs.ts)
+- [/lib/Money](/lib/money.ts)
 
 ## Business problem:
 

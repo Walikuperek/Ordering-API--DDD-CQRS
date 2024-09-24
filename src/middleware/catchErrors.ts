@@ -11,7 +11,7 @@ export function catchErrorsMiddleware() {
 
         // simply copy logger module impl from https://github.com/Walikuperek/bports
         // it's not published to NPM yet, so... just copy-paste it!
-        console.error(err); // change to `logger.error(err)` from https://github.com/Walikuperek/bports!
+        // console.error(err); // console.log is SYNC(blocks - can be huge problem, remember) change to `logger.error(err)` from https://github.com/Walikuperek/bports!
 
         if (err instanceof ValidationException) {
             return res.status(422).json({message: 422 + ' ' + err.message});

@@ -5,8 +5,8 @@ import express from 'express';
 import {createDatabase} from './infra/database.js';
 import {listenToCqrsMessages} from './infra/event-bus.js';
 import {catchErrorsMiddleware} from './middleware/catchErrors.js';
-import {getProducts, createProduct, sellProduct, increaseStock} from './availability/product.controller.js';
-import {createOrder} from './orders/order.controller.js';
+import {getProducts, createProduct, sellProduct, increaseStock} from './availability/index.js';
+import {createOrder} from './orders/index.js';
 
 // DB initialization
 const database = createDatabase();

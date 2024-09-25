@@ -8,7 +8,7 @@ export const createProduct = async (req: Request, res: Response, next: NextFunct
     try {
         let { name, description, price, stock } = req.body;
         price = new Money(price.amount, price.currency);
-        await CommandBus.publish(new CreateProductCommand({name, description, price, stock}));
+        CommandBus.publish(new CreateProductCommand({name, description, price, stock}));
         res.status(201).json({message: 'Product created'});
     } catch (err: any) {
         next(err);
@@ -19,7 +19,7 @@ export const sellProduct = async (req: Request, res: Response, next: NextFunctio
     try {
         const { quantity } = req.body;
         const { productId } = req.params;
-        await CommandBus.publish(new SellProductCommand({productId, quantity}));
+        CommandBus.publish(new SellProductCommand({productId, quantity}));
         res.status(204).json({message: 'Product sold'});
     } catch (err: any) {
         next(err);
@@ -30,7 +30,7 @@ export const increaseStock = async (req: Request, res: Response, next: NextFunct
     try {
         const { quantity } = req.body;
         const { productId } = req.params;
-        await CommandBus.publish(new IncreaseStockCommand({productId, quantity}));
+        CommandBus.publish(new IncreaseStockCommand({productId, quantity}));
         res.status(204).json({message: 'Product stock increased'});
     } catch (err: any) {
         next(err);

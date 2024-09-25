@@ -28,7 +28,7 @@ const increaseStock = async (req: Request, res: Response, next: NextFunction) =>
     // try
     const {quantity} = req.body;
     const {productId} = req.params;
-    await CommandBus.publish(new IncreaseStockCommand({productId, quantity}));
+    CommandBus.publish(new IncreaseStockCommand({productId, quantity}));
     res.status(204).json({message: 'Product stock increased'});
     // catch next(err) -> catched by middleware
 }

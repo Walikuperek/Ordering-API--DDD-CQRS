@@ -14,7 +14,7 @@ export class InMemoryOrderRepository implements OrderRepository {
         if (existing && existing.getActualVersion() > order.getActualVersion()) {
             throw new ConcurrencyException(`Trying to override order with version ${order.getActualVersion()} which is lower than already existing one ${existing.getActualVersion()}`);
         }
-        if (existing) existing.incrementVersion();
+        if (existing) order.incrementVersion();
         this.orders.set(order.id, order);
     }
 }

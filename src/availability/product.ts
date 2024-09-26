@@ -57,6 +57,7 @@ export class Product {
 
     incrementVersion(): void {
         this.version += 1;
+        this.updatedAt = new Date(); // just for reports, btw can be used as a version as well ;)
     }
 }
 

@@ -30,7 +30,7 @@ export class InMemoryProductRepository implements ProductRepository {
         if (existing && existing.getActualVersion() > product.getActualVersion()) {
             throw new ConcurrencyException(`Trying to override product with version ${product.getActualVersion()} which is lower than already existing one ${existing.getActualVersion()}`);
         }
-        if (existing) existing.incrementVersion();
+        if (existing) product.incrementVersion();
         this.products.set(product.id, product);
     }
 
